@@ -1,5 +1,5 @@
 ## HTML / CSS / JavaScript 筆記
-* HTML架構
+* **HTML架構**
 ```
 <!DOCTYPE html>
 <html lang = "zh-TW"> <!-- lang指定網頁語系 -->
@@ -13,7 +13,7 @@
     </body>
 </html>
 ```
-* 語意化標記  
+* **語意化標記**  
   原本需要使用 `<div id="">` 來指定id屬性，現在可以透過以下標記去除div，與div功能相同
   
 ```
