@@ -2,8 +2,8 @@
 
 ### 目錄
 * [🔴 HTML 架構](#html架構)
-* [🔴 head 區塊](#head)
-* [🔴 body 區塊](#body)
+* [🔴 head](#head)
+* [🔴 body](#body)
 
 ### 🔴HTML架構
 
@@ -23,8 +23,20 @@
 程式語法 `<起始標記 屬性名稱1=設定值1 屬性名稱2=設定值2 ...>`  
 * `<title> 網站名稱 </title>` 說明此網頁的標題，並顯示在瀏覽器的標題列   
 * `<link rel="與目前網站的關係" href="連結">` 建立與其他檔案或外部資源的連結
+	rel的屬性
+	1. 樣式與圖示
+		* `stylesheet` : 連結外部 CSS 檔案來美化網頁
+		* `icon` : 定義網頁的小圖示
+		* `apple-touch-icon` : 把網頁加入到主畫面時iPhone/iPad 時顯示的圖示
+	2. 效能優化
+		* `preload` : 告訴瀏覽器先下載的資源
+		* `preconnect` : 預先連線到外部伺服器
+		* `dns-prefetch` : 預先進行DNS查詢
+	3. SEO與連結的關係
+		* `canonical` : 標準連結
+		* `alternate` : 定義替代版本  
+
 * `<meta>` 是用來描述的語法
-	meta屬性
 	1. `charset` 文件字元編碼
 		* `UTF-8` : <推薦>目前網路標準編碼，支援全世界語言
 		* `Big5` : 早期使用的繁體中文版本
@@ -43,11 +55,10 @@
 			* `author` : 作者
 			* `generator` : 網站是用什麼軟體產生的
 			* `copyright` : 版權聲明
-	3. `content` 屬性值
+	3. `content` 屬性值  
 		必須搭配name或property屬性
 	4. `http-equiv` 模擬 HTTP 指令
 		* `refresh` : 自動重新整理頁面或跳轉頁面
-		* `content-type` : 早期的編碼宣告方式
 		* `X-UA-Compatible` : 指定IE瀏覽器的渲染模式
 		* `content-security-policy` : 防止惡意腳本攻擊
 	5. `property` 社群通訊協議
