@@ -1,14 +1,14 @@
 ## HTML / CSS / JavaScript 筆記
 
 ### 目錄
-* [🔴HTML](#html)
-	* [🟠 HTML 架構](#html架構)
-	* [🟠 head](#head)
-	* [🟠 body](#body)
-* [🔴CSS](#css)
+* [HTML](#html)
+	* [🔴 HTML 架構](#html架構)
+	* [🔴 head](#head)
+	* [🔴 body](#body)
+* [CSS](#css)
 
-## 🔴HTML
-### 🟠HTML架構
+## HTML
+### 🔴HTML架構
 ```html
 <!DOCTYPE html>
 <html lang = "zh-TW"> <!-- lang指定網頁語系 -->
@@ -20,8 +20,10 @@
     </body>
 </html>
 ```
-***
-### 🟠head 
+
+<br>
+
+### 🔴head 
 在head區塊中，會放置與網頁的相關資訊  `<起始標記 屬性名稱1=設定值1 屬性名稱2=設定值2 ...>`  
 * **`<title> 網站名稱 </title>` 說明此網頁的標題，並顯示在瀏覽器的標題列**  
 * **`<link rel="與目前網站的關係" href="連結">` 建立與其他檔案或外部資源的連結，以下介紹rel相關屬性**  
@@ -69,8 +71,10 @@
 		* `og:description` : 分享時顯示的副標題/摘要
 		* `og:image` : 分享時顯示的縮圖
 		* `og:url` : 分享時指向的標準網址
-***
-### 🟠body
+
+<br>
+
+### 🔴body
 在body區塊中，會顯示網頁的內容
 1. 文本
 	* 標題 `<h1>~<h6> </h1>~</h6>` : `<h1>`最大 `<h6>`最小
@@ -93,7 +97,6 @@
 	* `<td>` : 一般資料單位格
 
 
-
 * **語意化標記**  
 	原本需要使用 `<div id="">` 來指定id屬性，現在可以透過以下標記去除div，與div功能相同
   
@@ -109,4 +112,4 @@
 	<mark>		<!-- 要凸顯的文字 -->
 	```
 
-## 🔴CSS
+## CSS
