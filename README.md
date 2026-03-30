@@ -76,28 +76,28 @@
 
 ### 🔴body
 在body區塊中，會顯示網頁的內容
-1. 文本
+1. **文本**  
 	* `<h1>~<h6> </h1>~</h6>` : 標題 `<h1>`最大 `<h6>`最小
 	* `<p> </p>` : 段落 
 	* `<br>` : 換行 
 	* `<hr>` : 水平線
 	* `<blockquote>` : 縮排標籤
-	* `<b>``<strong>` : 粗體
-	* `<i>``<em>` : 斜體
-	* `<u>``<ins>` : 底線
-	* `<s>``<del>` : 刪除線
+	* `<b><strong>` : 粗體
+	* `<i><em>` : 斜體
+	* `<u><ins>` : 底線
+	* `<s><del>` : 刪除線
 	* `<sup>` : 上標
 	* `<sub>` : 下標
-2. 清單
+2. **清單**  
 	* `<ul>` : 無序清單
 	* `<ol>` : 有序清單
 	* `<li>` : 清單中的每一列
-3. 表格
+3. **表格**  
 	* `<table>` : 表格主體
 	* `<tr>` : 一列
 	* `<th>` : 表頭單位格(文字會粗體居中)
 	* `<td>` : 一般資料單位格
-4. 超連結
+4. **超連結**  
 	`<a href="連結資源" target="連結方式">網站顯示的文字或圖片</a>`
 	* `href` : 目標網址
 		* 網址 : https://www.google.com/?hl=zh_TW
@@ -111,17 +111,17 @@
 		* `_top` : 顯示整個視窗
 		* `_parent` : 顯示在上一層框架中
 		* `視窗名稱` : 顯示在指定名稱的視窗中
-5. 圖片
+5. **圖片**  
 	`<img src="圖檔路徑" alt="文字說明" ...>`
 	* `src` : 設定圖檔路徑
 	* `alt` : 圖片沒出現時的說明文字
-6. 表單
+6. **表單**  
 	```html
 	<form action="" method="" ...>
 		<input type="欄位型別" name="欄位名稱">
 	</form>
 	```
-	* form的屬性
+	* form屬性
 		* `action` : 用來處理表單資料程式的位置
 		* `method` : 指定用戶端傳送到伺服器所採用的方式
 		* `name` : 提供伺服器使用，根據name的欄位名稱存取資料
@@ -129,8 +129,25 @@
 		* `enctype` : 設定表單傳輸編碼類型
 		* `accept` : 指定允許上傳的文件類型
 		* `autocomplete` : 當使用者輸入時，會顯示先前資料
-	* input type的屬性
-		* `text` : 建立單行文字欄位
+	* input屬性
+		* `type` : 欄位樣式
+			* `<input type="text">` : 建立單行文字欄位
+			* `<input type="password">` : 建立密碼欄位
+			* `<input type="radio">` : 建立單選按鈕
+			* `<input type="checkbox">` : 建立核取方塊
+			* `<input type="number">` : 建立數字欄位
+			* `<input type="date">` : 建立日期選擇器
+			* `<input type="email">` : 建立郵件欄位
+			* `<input type="file">` : 建立檔案上傳按鈕
+			* `<input type="submit">` : 建立送出按鈕
+			* `<input type="reset">` : 建立重設按鈕
+			* `<input type="hidden">` : 建立隱藏欄位
+		* `name` : 欄位名稱
+		* `value` : 欄位預設值
+		* `placeholder` : 欄位提示文字
+		* `required` : 設定為必填項目
+		* `readonly` : 設定為唯讀
+		* `disabled` : 禁用該欄位
 
 
 * **語意化標記**  
